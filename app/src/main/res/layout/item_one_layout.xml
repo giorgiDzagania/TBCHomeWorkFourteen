@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/model_woman" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Name:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/iv_image"
+        app:layout_constraintTop_toBottomOf="@id/iv_image" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@id/tv_name_title"
+        app:layout_constraintStart_toEndOf="@id/tv_name_title"
+        app:layout_constraintTop_toTopOf="@id/tv_name_title"
+        tools:text="Nina agdal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_height_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Haight:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_name_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_height_title"
+        app:layout_constraintStart_toEndOf="@+id/tv_height_title"
+        app:layout_constraintTop_toTopOf="@id/tv_height_title"
+        tools:text="175" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="@color/background_color"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@id/tv_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_height"
+        app:layout_constraintTop_toTopOf="@id/tv_height" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

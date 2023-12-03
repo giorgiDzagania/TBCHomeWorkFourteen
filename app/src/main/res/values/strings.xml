@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TBCHomeWorkFourteen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_model_2">Add model 2</string>
+    <string name="add_model_1">Add model 1</string>
+</resources>
